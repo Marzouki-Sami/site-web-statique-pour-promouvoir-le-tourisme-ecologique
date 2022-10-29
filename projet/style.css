@@ -1,0 +1,433 @@
+::selection{
+  background-color: lightgreen;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100&display=swap');
+body{
+  font-family: 'Bebas Neue', cursive;
+  background: url(sahara.jpg) 100% 0%;
+
+}
+/******************************* barre de navigation pour tous les pages **********************************/
+ul li a:link { text-decoration: none; color: green; }
+
+
+ul li a:visited { text-decoration: none; color: green;}
+
+
+ul li a:hover { text-decoration: none; color: green; }
+
+
+ul li a:active { text-decoration: none; color: green;}
+
+nav {
+  background-color: white;
+  height: 60px;
+  transition:all ease-in-out 0.4s;
+  box-shadow:0 0 20px #bbb;
+  border-radius: 8px;
+}
+
+nav ul li:hover {
+  background-color: green;
+  margin-left: 10px;
+  -webkit-transform: scale(1.1);
+}
+
+
+nav ul li { 
+  position: relative;
+  top: 16px;
+  display: inline;
+  list-style:none;
+  width:19%;
+  font-size: 20px;
+  margin:30px;
+  padding:16px 20px;
+  color:#545454;
+  letter-spacing:4px;
+  text-align:center;
+}
+
+ul li a:hover{
+    color: white; cursor:pointer;
+}
+
+/*nav ul li ul {
+  position: absolute;
+  left: 20px;
+  visibility: hidden;
+}*/
+
+nav ul li:hover ul {
+  visibility: visible;
+}
+
+nav ul li:hover{
+  color:#1abc9c; cursor:pointer;
+}
+
+nav ul li{ 
+   transition:all 1s ease;
+   color: #545454;
+}
+
+
+/***********************************************************************************************************/
+
+
+
+
+/******************************************* page contact **************************************************/
+
+#ttt{
+    text-align: center;
+    font-size: 100px;
+    color: green;
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.elemform{
+    width: 30%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-color: var(--theme-ui-colors-border,#CCCCCC);
+    border-radius: 8px;
+    background-color: white;
+    padding: 15px;
+}
+
+.formulaire>textarea{
+  padding-bottom: 50px;
+}
+
+.btttn {
+  width:32.5%;
+  padding:15px;
+  border-radius:6px;
+  border:0;
+  background:green;
+  font-size:1.2em;
+  color:#fff;
+  box-shadow: 0 5px 15px -5px #00000070;
+  
+}
+
+.btttn:active {
+  visibility: hidden;
+  box-shadow:none;
+}
+
+textarea{
+  font-size: 18px;
+}
+/***********************************************************************************************************/
+
+/********************************************* page index **************************************************/
+
+#video{
+  object-fit: cover;
+  width: 99%;
+  height: 760px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  border-radius: 8px;
+}
+
+.titre1{
+  width: 80%;
+  margin: 20px;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+  color: green;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.titre2{
+  width: 80%;
+  text-align: center;
+  color: green;
+  margin-bottom: 100px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+  .apropos {
+    width: 80%;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    color: green;
+   border-radius: 8px;
+   padding: 20px 50px;
+   margin-bottom: 30px;
+}
+.apropos p{
+  font-size: 1.1em;
+  color: black;
+}
+
+.trois{
+  display: flex;
+}
+.elementsphilo{
+display: flex;
+flex-direction: column;
+border-radius: 8px;
+padding: 20px;
+background-color: white;
+width: 30%;
+margin: 20px;
+color: black;
+}
+
+.elementsphilo>h4{
+  font-size: 20px;
+  padding: 5px 20px;
+}
+
+h4:hover{
+
+color: white;
+background-color: green;
+border-radius: 8px;
+cursor:pointer;
+transition:all 0.6s ease;
+
+}
+
+table{
+  margin-top: 60px;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px black;
+}
+th{
+  font-size: 30px;
+  color: green;
+  padding: 20px;
+}
+td{
+  font-size: 20px;
+  padding: 10px;
+}
+/***********************************************************************************************************/
+/********************************************* distination *************************************************/
+.h3dis{
+  margin-top: 60px;
+  background-color: white;
+  border-radius: 8px;
+  border: lightblue 5px solid;
+  width: 70%;
+  padding: 20px;
+  color: darkgreen;
+}
+
+.containersection{
+  display: flex;
+  flex-direction: row;
+}
+
+.img{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 40%;
+}
+
+.lesimage{
+  margin: 30px;
+  border-radius: 8px;
+  border: lightblue solid 10px;
+}
+
+.paragraphe{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 40%;
+}
+.para1{
+  background-color: white;
+  padding: 37px;
+  border-radius: 8px;
+  margin-top: 8%;
+  font-size: 23px;
+}
+
+.para2{
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 11.5%;
+  font-size: 18px;
+}
+
+.para3{
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  margin-top: 11%;
+  font-size: 25px;
+}
+
+.para4{
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-top: 11%;
+}
+
+#aaaaa{
+  background-color: white;
+  border-radius: 10px;
+  color: green;
+  padding: 50px;
+  width: 90%;
+}
+#aaaaa>h1{
+margin: 10px;
+font-size: 60px;
+}
+
+#aaaaa>p{
+font-size: 20px;
+}
+/*************************************************************************************************************/
+
+/************************************************ gouvernorat ****************************************************/
+center  h2{
+  width: 40%;
+  color: green;
+  font-size: 50px;
+  border-radius: 20px;
+  background-color: white;
+  padding-bottom: 7px;
+  padding-left: 20px;
+}
+center  h2:hover{
+  background-color: green;
+  color: white;
+  transition:all 1s ease;
+}
+
+.containergouvernorat{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#bizerte{
+  width: 40%;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  margin-top: 15px;
+}
+#imgbizerte{
+  width: 40%;
+  border-radius: 8px;
+  border: lightblue 10px solid;
+}
+
+.containerarc{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#utic{
+  width: 40%;
+  border: lightblue solid 10px;
+  border-radius: 8px;
+}
+#putic{
+  width: 50%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.quatre{
+  display: flex;
+}
+.elementsact{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border: white solid 1px;
+border-radius: 8px;
+padding: 20px;
+background-color: white;
+width: 40%;
+margin: 20px;
+color: black;
+}
+.elementsact>p{
+  color: black;
+}
+.elementsact>h4{
+  padding: 5px 20px 5px 20px;
+}
+h4:hover{
+
+color: white;
+background-color: green;
+border-radius: 8px;
+cursor:pointer;
+transition:all 0.6s ease;
+}
+
+.containeravis{
+  display: flex;
+  flex-direction: column;
+}
+
+.elemavis{
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8PX;
+
+}
+
+/*************************************************************************************************************/
+/**************************************** footer por tous les page *******************************************/
+footer
+{
+
+}
+.containerfooter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 97%;
+  margin-top: 70px;
+  padding: 20px;
+  background-color: green;
+  border-radius: 8px;
+}
+.containerfooter>h3,.containerfooter>h5{
+  font-family: arial;
+  margin: 0.25%;
+  color: white;
+  letter-spacing: 4px;
+}
+/************************************************************************************************************/
